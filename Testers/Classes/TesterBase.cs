@@ -3,11 +3,11 @@
     /// <summary>
     /// This is the base class and the least amount of information of a Tester
     /// </summary>
-    public class TesterBase
+    public class TesterBase : Tester
     {
         public TesterBase()
         {
-
+            base.AddClassConverter("XML", new XMLTesterBaseConverter(this));
         }
 
         public int TesterId
