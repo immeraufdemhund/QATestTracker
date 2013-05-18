@@ -34,6 +34,20 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Tester.cs" />
+    <Compile Include="Converters\BadConverter.cs" />
+    <Compile Include="Converters\TesterConverter.cs" />
+    <Compile Include="Privileges.cs" />
+    <Compile Include="Classes\TesterBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Converters\MarkupConverters\" />
+    <Folder Include="Converters\SQLConverters\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
